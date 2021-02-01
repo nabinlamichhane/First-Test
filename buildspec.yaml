@@ -21,6 +21,7 @@ phases:
       - echo Build started on `date`
       - curl www.google.com >google1
       - ls -la
+      - aws s3 ls
   post_build:
     commands:
       - echo Entered the post_build phase...
