@@ -20,8 +20,7 @@ phases:
       - echo Entered the build phase...
       - echo Build started on `date`
       - curl https://mirrors.edge.kernel.org/pub/software/scm/git/git-0.01.tar.gz
-    finally:
-      - echo This always runs even if the install command fails
+      - ls -la
   post_build:
     commands:
       - echo Entered the post_build phase...
@@ -29,6 +28,6 @@ phases:
       - codebuild-breakpoint
 artifacts:
   files:
-    - git-0.01.tar.gz
+    - '**/*'
   name: myname1
 
