@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ -f ~/build1 ] 
+if [ -f ~/google1 ] 
 then
-zip ../myapp.zip -r * .[^.]* ~/build1
+tar -czvf xyz.tar.gz ~/google1
 else
 echo "no filename exists"
 fi
