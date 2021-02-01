@@ -30,6 +30,7 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`
+      - echo $CODEBUILD_SRC_DIR
       - codebuild-breakpoint
 artifacts:
   files:
