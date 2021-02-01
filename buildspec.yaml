@@ -22,10 +22,10 @@ phases:
       - curl www.google.com >google1
       - chmod 755 google1
       - ls -la
-      #- ./artifact.sh
+      - if [  -f ~/google1 ]; then zip tar -czvf google1.tar.gz ~/google1; elif aws s3 cp google1.tar.gz s3://s3nabintest1/Build1/; else echo "no filename exists; fi
       - ls -la
       - aws s3 ls
-      - aws s3 cp google1 s3://s3nabintest1/Build1/
+      #- aws s3 cp google1 s3://s3nabintest1/Build1/
   post_build:
     commands:
       - echo Entered the post_build phase...
