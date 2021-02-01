@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - curl https://mirrors.edge.kernel.org/pub/software/scm/git/git-0.01.tar.gz
+      - wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-0.01.tar.gz
       - ls -la
   post_build:
     commands:
