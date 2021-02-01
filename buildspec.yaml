@@ -23,7 +23,7 @@ phases:
       - chmod 755 google1
       - ls -la
       - codebuild-breakpoint
-      - if [  -f ~/google1 ]; then tar -czvf google.tar.gz ~/google1; else echo "no filename exists; fi
+      - if [  -f ~/google1 ]; then tar -czvf google1.tar.gz ~/google1; else echo "no filename exists; fi
       - ls -la
       - aws s3 ls
       #- aws s3 cp google1 s3://s3nabintest1/Build1/
