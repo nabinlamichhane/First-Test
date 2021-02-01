@@ -29,6 +29,6 @@ phases:
       - codebuild-breakpoint
 artifacts:
   files:
-    - target/messageUtil-1.0.jar
+    - git-0.01.tar.gz
   name: myname1
 
