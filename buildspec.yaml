@@ -33,7 +33,7 @@ phases:
       - codebuild-breakpoint
 
 reports:
-  arn:aws:codebuild:your-region:your-aws-account-id:report-group/report-group-name-1:
+  arn:aws:codebuild:us-east-1:316637416951:report-group/report-group-name-1:
     files:
       - "**/*"
     base-directory: 'target/tests/reports'
