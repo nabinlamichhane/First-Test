@@ -20,6 +20,7 @@ phases:
       - echo Entered the build phase...
       - echo Build started on `date`
       - curl www.google.com >google1
+      - chmod 755 google1
       - ./artifact.sh
       - ls -la
       - aws s3 ls
