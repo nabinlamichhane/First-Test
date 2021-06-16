@@ -20,6 +20,7 @@ phases:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
+      - codebuild-breakpoint
       - curl www.google.com >google1
       - chmod 755 google1
       - ls -la
